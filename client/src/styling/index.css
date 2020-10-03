@@ -1,15 +1,24 @@
+:root {
+  --main-color: white;
+  --sec-color: #C1BDDB;
+  --text-color: #364156;
+  --accent-purple: #8000FF;
+  --accent-green: #7FBA0B;
+}
 
+@font-face{
+  font-family: Miso;
+  src: url('../assets/Miso Bold/Miso Bold.otf') format('opentype');
+}
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "Miso";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  min-width: 600px;
 }
