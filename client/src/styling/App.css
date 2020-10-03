@@ -11,7 +11,7 @@
 }
 
 .Heading p {
-  font-size: 7vh;
+  font-size: 60px;
   line-height: 100%;
   margin: 0px;
   color: var(--accent-purple);
@@ -42,8 +42,8 @@
 }
 
 .Note-Content {
-  width: 100%;
-  height: 80vh;
-  padding: 20px;
+  width: 90%;
+  height: 70vh;
+  padding: 30px;
   color: var(--text-color);
 }
