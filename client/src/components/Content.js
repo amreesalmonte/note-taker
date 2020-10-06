@@ -60,24 +60,19 @@ export default class Heading extends Component {
         // handles event listener
         if (this.state.listening) {
             recognition.start()
-            recognition.addEventListener('end', recognition.start)
             console.log("start")
         } else {
             recognition.stop()
             console.log("end")
         }
 
-        let finalTranscript = "";
         recognition.onresult = event => {
             const transcript = Array.from(event.results)
                 .map(result => result[0])
                 .map(result => result.transcript)
                 .join("")
 
-            if (event.results[0].isFinal) {
-                finalTranscript += transcript + " "
-            }
-            console.log(finalTranscript)
+            console.log(transcript)
         }
     }
 
